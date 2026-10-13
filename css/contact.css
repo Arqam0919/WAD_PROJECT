@@ -1,0 +1,97 @@
+body {
+    background: #1d1510;
+}
+.contact_page {
+    color: #f6f0e6;
+    background: #1d1510;
+}
+.contact_hero {
+    padding: 55px 8%;
+    background: url("../assests/heroSection.jpeg") center/cover;
+}
+.contact_hero h1 {
+    margin: 8px 0;
+    font: 48px Georgia, serif;
+}
+.contact_hero p:last-child, .contact_details > p:not(.eyebrow) {
+    color: #d7c5b4;
+}
+.contact_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px 8%;
+}
+.contact_details h2, .contact_form h2 {
+    font: 27px Georgia, serif;
+}
+.detail_item {
+    margin: 18px 0;
+}
+.detail_item strong, .detail_item span {
+    display: block;
+    margin-bottom: 4px;
+}
+.detail_item span {
+    color: #cdb9a8;
+    font-size: 12px;
+}
+.contact_form {
+    padding: 24px;
+    background: #2a2019;
+}
+.contact_fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.contact_form label {
+    display: block;
+    margin-top: 14px;
+    color: #d7c5b4;
+    font-size: 12px;
+}
+.contact_form input, .contact_form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 7px;
+    padding: 10px;
+    border: 1px solid #594538;
+    color: #f6f0e6;
+    background: #241a14;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+    border-color: #c58955;
+    outline: 1px solid #c58955;
+}
+.contact_button {
+    margin-top: 18px;
+    padding: 10px 18px;
+    border: 0;
+    color: #fff;
+    background: #a66d3f;
+    cursor: pointer;
+}
+.opening_strip {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 8%;
+    background: #2a2019;
+}
+.opening_strip span {
+    margin-left: 25px;
+    color: #cdb9a8;
+    font-size: 12px;
+}
+.opening_strip img {
+    width: 250px;
+    object-fit: cover;
+}
+@media (max-width: 700px) {
+    .contact_content, .contact_fields {
+        grid-template-columns: 1fr;
+    }
+    .opening_strip img {
+        display: none;
+    }
+}
