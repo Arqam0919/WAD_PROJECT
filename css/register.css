@@ -1,0 +1,113 @@
+body {
+    background: #f6f0e6;
+}
+.register_page {
+    padding: 50px 8%;
+    background: #ede2d5;
+}
+.page_intro {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.eyebrow, .register_form legend {
+    color: #8b5e3c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.page_intro h1 {
+    margin: 10px 0;
+    color: #30231d;
+    font-family: Georgia, serif;
+}
+.page_intro p:last-child {
+    color: #66564e;
+}
+.register_form {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    background: #fffaf4;
+}
+.register_form fieldset {
+    margin-bottom: 22px;
+    padding: 18px;
+    border: 1px solid #d6c4b4;
+}
+.register_form legend {
+    padding: 0 6px;
+}
+.form_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.register_form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #4b3930;
+    font-size: 14px;
+}
+.register_form label > span, .register_form small {
+    color: #8b5e3c;
+}
+.register_form input, .register_form select, .register_form textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #cdb9a8;
+    color: #30231d;
+    background: #fffaf4;
+}
+.register_form input:focus, .register_form select:focus, .register_form textarea:focus {
+    border-color: #8b5e3c;
+    outline: 1px solid #8b5e3c;
+}
+.register_form input:valid, .register_form textarea:valid {
+    border-left: 3px solid #6f8a62;
+}
+.register_form input:invalid:not(:placeholder-shown), .register_form textarea:invalid:not(:placeholder-shown) {
+    border-left: 3px solid #b45f4b;
+}
+.register_form input[readonly] {
+    background: #eee3d7;
+}
+.register_form input[type="range"], .register_form input[type="color"],
+.choice_group input, .check_line input {
+    width: auto;
+    accent-color: #8b5e3c;
+}
+.choice_group {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+.choice_group label, .check_line {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form_actions {
+    text-align: right;
+}
+.primary_button, .reset_button {
+    padding: 10px 18px;
+    border: 0;
+    cursor: pointer;
+}
+.primary_button {
+    color: #fff;
+    background: #8b5e3c;
+}
+.reset_button {
+    color: #60402d;
+    background: #e5d5c5;
+}
+@media (max-width: 650px) {
+    .form_grid {
+        grid-template-columns: 1fr;
+    }
+    .choice_group {
+        flex-direction: column;
+    }
+}

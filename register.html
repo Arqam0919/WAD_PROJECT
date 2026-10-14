@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | Cafe Murad</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <nav class="home_nav">
+        <a class="logo_container" href="index.html"><img src="assests/companylogo.jpg" alt="Cafe Murad logo"></a>
+        <div class="others_container">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Coffee Menu</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="discover.html">Coffee Shops</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="register.html" aria-current="page">Register</a>
+        </div>
+        <div class="searchbar">
+            <input type="search" placeholder="Search your favourite coffee" aria-label="Search">
+            <button type="button" aria-label="Search"><span aria-hidden="true">&#128269;</span></button>
+        </div>
+    </nav>
+
+    <main class="register_page">
+        <header class="page_intro">
+            <p class="eyebrow">JOIN THE COFFEE COMMUNITY</p>
+            <h1>Create your Cafe Murad account</h1>
+            <p>Save your favourite brews, receive seasonal updates, and make every coffee moment more personal.</p>
+        </header>
+
+        <form class="register_form" action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Your details</legend>
+                <div class="form_grid">
+                    <label for="full-name">Full name <span>*</span>
+                        <input id="full-name" name="full_name" type="text" placeholder="e.g. Ayesha Khan" required minlength="2" maxlength="60">
+                    </label>
+                    <label for="email">Email address <span>*</span>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                    </label>
+                    <label for="password">Password <span>*</span>
+                        <input id="password" name="password" type="password" placeholder="At least 8 characters" required minlength="8" maxlength="40">
+                    </label>
+                    <label for="birthday">Date of birth
+                        <input id="birthday" name="birthday" type="date" max="2026-10-13">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your coffee preferences</legend>
+                <div class="form_grid">
+                    <label for="visit-time">Best time for coffee
+                        <input id="visit-time" name="visit_time" type="time">
+                    </label>
+                    <label for="coffee-love">How much do you love coffee?
+                        <input id="coffee-love" name="coffee_love" type="range" min="1" max="10" value="7">
+                    </label>
+                    <label for="coffee-colour">Your coffee mood colour
+                        <input id="coffee-colour" name="coffee_colour" type="color" value="#8b5e3c">
+                    </label>
+                    <label for="roast">Preferred roast
+                        <select id="roast" name="roast">
+                            <option value="light">Light roast</option>
+                            <option value="medium" selected>Medium roast</option>
+                            <option value="dark">Dark roast</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="choice_group">
+                    <p>Favourite drink</p>
+                    <label><input type="radio" name="drink" value="espresso" checked> Espresso</label>
+                    <label><input type="radio" name="drink" value="latte"> Latte</label>
+                    <label><input type="radio" name="drink" value="cold-brew"> Cold brew</label>
+                </div>
+                <label class="check_line"><input type="checkbox" name="newsletter" checked> Send me new coffee and shop updates</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tell us more</legend>
+                <div class="form_grid">
+                    <label for="avatar">Profile photo
+                        <input id="avatar" name="avatar" type="file" accept="image/*">
+                    </label>
+                    <label for="referral">Referral code <small>(read-only example)</small>
+                        <input id="referral" name="referral" type="text" value="COFFEE-2026" readonly>
+                    </label>
+                    <label for="account-status">Account status <small>(currently unavailable)</small>
+                        <input id="account-status" type="text" value="Invited members only" disabled>
+                    </label>
+                </div>
+                <label for="story">Your perfect coffee moment
+                    <textarea id="story" name="story" rows="5" maxlength="500" placeholder="Tell us what makes a good coffee day..."></textarea>
+                </label>
+            </fieldset>
+
+            <div class="form_actions">
+                <button class="primary_button" type="submit">Create account</button>
+                <button class="reset_button" type="reset">Clear form</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="site_footer">
+        <div><h3>Cafe Murad</h3><p>Fresh coffee and good moments every day.</p></div>
+        <div class="footer_links"><a href="menu.html">Coffee Menu</a><a href="aboutus.html">About Us</a><a href="contact.html">Contact Us</a></div>
+        <p class="copyright">&copy; 2026 Cafe Murad</p>
+    </footer>
+</body>
+</html>
