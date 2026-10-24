@@ -1,43 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coffee Menu | Cafe Murad</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/menu.css">
-</head>
-<body>
-    <nav class="home_nav">
-        <a class="logo_container" href="index.html"><img src="assests/companylogo.jpg" alt="Cafe Murad logo"></a>
-        <div class="others_container"><a href="index.html">Home</a><a href="menu.html" aria-current="page">Coffee Menu</a><a href="aboutus.html">About Us</a><a href="discover.html">Coffee Shops</a><a href="contact.html">Contact Us</a><a href="register.html">Register</a></div>
-        <div class="searchbar"><input type="search" placeholder="Search your favourite coffee" aria-label="Search"><button type="button" aria-label="Search">&#128269;</button></div>
-    </nav>
-    <main class="menu_page">
-        <section class="menu_hero"><p class="menu_label">OUR COFFEE MENU</p><h1>Crafted Brews,<br>Made for You</h1><p>From rich espressos to smooth lattes, explore our carefully crafted coffee selection made with premium beans and passion.</p></section>
-        <section class="menu_content">
-            <p class="menu_label">OUR MENU</p><h2>Coffee for Every Mood</h2><p class="menu_intro">Whether you like it bold, smooth, or somewhere in between,<br>we have the perfect cup for you.</p>
-            <div class="menu_filters"><button class="active" type="button">All</button><button type="button">Espresso</button><button type="button">Latte</button><button type="button">Cappuccino</button><button type="button">Cold Coffee</button><button type="button">Specials</button></div>
-            <div class="menu_grid">
-                <div class="menu_card"><img src="assests/coffee_img1.avif" alt="Espresso"><div><h3>Espresso</h3><p>Rich, bold and full of character.</p><strong>$3.00</strong><button type="button">Add &#128722;</button></div></div>
-                <div class="menu_card"><img src="assests/coffee_img2.avif" alt="Cafe latte"><div><h3>Cafe Latte</h3><p>Smooth espresso with steamed milk.</p><strong>$4.50</strong><button type="button">Add &#128722;</button></div></div>
-                <div class="menu_card"><img src="assests/coffee_img3.avif" alt="Cappuccino"><div><h3>Cappuccino</h3><p>Espresso, steamed milk, and foam.</p><strong>$4.25</strong><button type="button">Add &#128722;</button></div></div>
-                <div class="menu_card"><img src="assests/coffee_img4.avif" alt="Iced coffee"><div><h3>Iced Coffee</h3><p>Chilled, refreshing, always a good idea.</p><strong>$4.00</strong><button type="button">Add &#128722;</button></div></div>
-                <div class="menu_card"><img src="assests/coffee_img5.avif" alt="Americano"><div><h3>Americano</h3><p>Strong coffee, smooth finish.</p><strong>$3.50</strong><button type="button">Add &#128722;</button></div></div>
-                <div class="menu_card"><img src="assests/coffee_img6.avif" alt="Caramel latte"><div><h3>Caramel Latte</h3><p>Espresso, steamed milk, caramel.</p><strong>$5.25</strong><button type="button">Add &#128722;</button></div></div>
-                <div class="menu_card"><img src="assests/coffee_img7.avif" alt="Mocha"><div><h3>Mocha</h3><p>Chocolate meets coffee.</p><strong>$5.00</strong><button type="button">Add &#128722;</button></div></div>
-                <div class="menu_card"><img src="assests/coffee_img8.webp" alt="Cold brew"><div><h3>Cold Brew</h3><p>Slow brewed, naturally smooth.</p><strong>$4.75</strong><button type="button">Add &#128722;</button></div></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Coffee Menu | Cafe Murad
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/Menu.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top site-nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 text-dark" href="Home.html">
+                    <img src="assests/main_logo.avif" alt="Cafe Murad logo" width="42" height="42">
+                    Cafe Murad
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <div class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                        <a class="nav-link" href="Home.html">
+                            Home
+                        </a>
+                        <a class="nav-link active" href="Menu.html">
+                            Menu
+                        </a>
+                        <a class="nav-link" href="About.html">
+                            About
+                        </a>
+                        <a class="nav-link" href="Shops.html">
+                            Shops
+                        </a>
+                        <a class="nav-link" href="Contact.html">
+                            Contact
+                        </a>
+                        <a class="btn btn-coffee px-4" href="Join-Us.html">
+                            Join us
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="video_section">
-            <p class="menu_label">MORE COFFEE VIEWS</p>
-            <h2>Watch the Cafe in Action</h2>
-            <div class="video_grid">
-                <iframe src="https://www.youtube.com/embed/b1SI0exETYU" title="Coffee Shop Ambience" loading="lazy" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/Amh5NZMkf3I" title="Aesthetic Cafe Videos" loading="lazy" allowfullscreen></iframe>
+        </nav>
+        <main class="menu_page">
+            <section class="menu_hero page-hero">
+                <video class="site-background-video" autoplay muted loop playsinline preload="metadata" poster="assests/hero_background_greenish.avif" aria-hidden="true">
+                    <source src="https://cdn.coverr.co/videos/coverr-city-stroll-with-a-warm-drink/1080p.mp4" type="video/mp4">
+                </video>
+                <p class="menu_label">
+                    OUR COFFEE MENU
+                </p>
+                <h1>
+                    Crafted Brews,
+                    <br>
+                    Made for You
+                </h1>
+                <p>
+                    From rich espressos to smooth lattes, explore our carefully crafted coffee selection made with premium beans and passion.
+                </p>
+            </section>
+            <section class="menu_content">
+                <p class="menu_label">
+                    OUR MENU
+                </p>
+                <h2>
+                    Coffee for Every Mood
+                </h2>
+                <p class="menu_intro">
+                    Whether you like it bold, smooth, or somewhere in between,
+                    <br>
+                    we have the perfect cup for you.
+                </p>
+                <div class="menu_filters">
+                    <button class="active" type="button">
+                        All
+                    </button>
+                    <button type="button">
+                        Espresso
+                    </button>
+                    <button type="button">
+                        Latte
+                    </button>
+                    <button type="button">
+                        Cappuccino
+                    </button>
+                    <button type="button">
+                        Cold Coffee
+                    </button>
+                    <button type="button">
+                        Specials
+                    </button>
+                </div>
+                <div class="menu_grid">
+                    <div class="menu_card tilt-card">
+                        <img src="assests/coffee_img1.avif" alt="Espresso">
+                        <div>
+                            <h3>
+                                Espresso
+                            </h3>
+                            <p>
+                                Rich, bold and full of character.
+                            </p>
+                            <strong>
+                                $3.00
+                            </strong>
+                            <button type="button">
+                                Add &#128722;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_card tilt-card">
+                        <img src="assests/coffee_img2.avif" alt="Cafe latte">
+                        <div>
+                            <h3>
+                                Cafe Latte
+                            </h3>
+                            <p>
+                                Smooth espresso with steamed milk.
+                            </p>
+                            <strong>
+                                $4.50
+                            </strong>
+                            <button type="button">
+                                Add &#128722;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_card tilt-card">
+                        <img src="assests/coffee_img3.avif" alt="Cappuccino">
+                        <div>
+                            <h3>
+                                Cappuccino
+                            </h3>
+                            <p>
+                                Espresso, steamed milk, and foam.
+                            </p>
+                            <strong>
+                                $4.25
+                            </strong>
+                            <button type="button">
+                                Add &#128722;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_card tilt-card">
+                        <img src="assests/coffee_img4.avif" alt="Iced coffee">
+                        <div>
+                            <h3>
+                                Iced Coffee
+                            </h3>
+                            <p>
+                                Chilled, refreshing, always a good idea.
+                            </p>
+                            <strong>
+                                $4.00
+                            </strong>
+                            <button type="button">
+                                Add &#128722;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_card tilt-card">
+                        <img src="assests/coffee_img5.avif" alt="Americano">
+                        <div>
+                            <h3>
+                                Americano
+                            </h3>
+                            <p>
+                                Strong coffee, smooth finish.
+                            </p>
+                            <strong>
+                                $3.50
+                            </strong>
+                            <button type="button">
+                                Add &#128722;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_card tilt-card">
+                        <img src="assests/coffee_img6.avif" alt="Caramel latte">
+                        <div>
+                            <h3>
+                                Caramel Latte
+                            </h3>
+                            <p>
+                                Espresso, steamed milk, caramel.
+                            </p>
+                            <strong>
+                                $5.25
+                            </strong>
+                            <button type="button">
+                                Add &#128722;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assests/coffee_img7.avif" alt="Mocha">
+                        <div>
+                            <h3>
+                                Mocha
+                            </h3>
+                            <p>
+                                Chocolate meets coffee.
+                            </p>
+                            <strong>
+                                $5.00
+                            </strong>
+                            <button type="button">
+                                Add &#128722;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assests/coffee_img8.webp" alt="Cold brew">
+                        <div>
+                            <h3>
+                                Cold Brew
+                            </h3>
+                            <p>
+                                Slow brewed, naturally smooth.
+                            </p>
+                            <strong>
+                                $4.75
+                            </strong>
+                            <button type="button">
+                                Add &#128722;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="editorial-section">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-5">
+                            <p class="section-kicker">NOT SURE WHERE TO START?</p>
+                            <h2 class="display-6 fw-bold">Choose by the feeling you want.</h2>
+                        </div>
+                        <div class="col-lg-7 editorial-copy">
+                            <p>
+                                For something bold, begin with an espresso or an Americano.
+                                If you prefer a softer cup, try the Cafe Latte or Cappuccino.
+                                Cold Brew and Iced Coffee are made for long afternoons,
+                                while the Caramel Latte and Mocha bring a little sweetness.
+                            </p>
+                            <p class="mb-0">
+                                Every drink is prepared to order, so tell the barista what
+                                you enjoy and we will help you find your next favourite.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video_section">
+                <p class="menu_label">
+                    MORE COFFEE VIEWS
+                </p>
+                <h2>
+                    Watch the Cafe in Action
+                </h2>
+                <div class="video_grid">
+                    <iframe src="https://www.youtube.com/embed/b1SI0exETYU" title="Coffee Shop Ambience" loading="lazy" allowfullscreen>
+                    </iframe>
+                    <iframe src="https://www.youtube.com/embed/Amh5NZMkf3I" title="Aesthetic Cafe Videos" loading="lazy" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+        </main>
+        <footer class="site_footer">
+            <div>
+                <h3>
+                    Cafe Murad
+                </h3>
+                <p>
+                    Fresh coffee and good moments every day.
+                </p>
             </div>
-        </section>
-    </main>
-    <footer class="site_footer"><div><h3>Cafe Murad</h3><p>Fresh coffee and good moments every day.</p></div><div class="footer_links"><a href="register.html">Register</a><a href="contact.html">Contact Us</a></div><p class="copyright">&copy; 2026 Cafe Murad</p></footer>
-</body>
+            <div class="footer_links">
+                <a href="Join-Us.html">
+                    Register
+                </a>
+                <a href="Contact.html">
+                    Contact Us
+                </a>
+            </div>
+            <p class="copyright">
+                &copy; 2026 Cafe Murad
+            </p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="js/script.js">
+        </script>
+    </body>
 </html>

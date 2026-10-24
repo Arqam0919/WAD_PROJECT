@@ -1,48 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Us | Cafe Murad</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
-    <nav class="home_nav">
-        <a class="logo_container" href="index.html"><img src="assests/companylogo.jpg" alt="Cafe Murad logo"></a>
-        <div class="others_container">
-            <a href="index.html">Home</a><a href="menu.html">Coffee Menu</a><a href="aboutus.html">About Us</a><a href="discover.html">Coffee Shops</a><a href="contact.html" aria-current="page">Contact Us</a><a href="register.html">Register</a>
-        </div>
-        <div class="searchbar"><input type="search" placeholder="Search your favourite coffee" aria-label="Search"><button type="button" aria-label="Search"><span aria-hidden="true">&#128269;</span></button></div>
-    </nav>
-    <main class="contact_page">
-        <section class="contact_hero">
-            <div><p class="eyebrow">GET IN TOUCH</p><h1>Contact Us</h1><p>We’d love to hear from you! Whether you have a question, feedback, or just want to say hello — we’re here for you.</p></div>
-        </section>
-        <section class="contact_content">
-            <div class="contact_details">
-                <p class="eyebrow">REACH OUT</p>
-                <h2>Our Contact Information</h2>
-                <p>Feel free to get in touch with us through any of the following channels. We’ll make sure to respond as soon as possible.</p>
-                <div class="detail_item"><strong>Our Location</strong><span>123 Coffee Lane, Gulberg III,<br>Lahore, Pakistan</span></div>
-                <div class="detail_item"><strong>Phone</strong><span>+92 300 1234567<br>(Mon - Sun, 10AM - 10PM)</span></div>
-                <div class="detail_item"><strong>Email</strong><span>hello@cafemurad.com</span></div>
-                <div class="detail_item"><strong>Follow Us</strong><span>@cafemurad &nbsp; Instagram &nbsp; Facebook</span></div>
-            </div>
-            <form class="contact_form" action="#" method="post">
-                <p class="eyebrow">SEND US A MESSAGE</p>
-                <h2>We’re Here to Help</h2>
-                <div class="contact_fields">
-                    <label for="contact-name">Your Name<input id="contact-name" name="name" type="text" required minlength="2"></label>
-                    <label for="contact-email">Your Email<input id="contact-email" name="email" type="email" required></label>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Contact Us | Cafe Murad
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/Contact.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top site-nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 text-dark" href="Home.html">
+                    <img src="assests/main_logo.avif" alt="Cafe Murad logo" width="42" height="42">
+                    Cafe Murad
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <div class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                        <a class="nav-link" href="Home.html">
+                            Home
+                        </a>
+                        <a class="nav-link" href="Menu.html">
+                            Menu
+                        </a>
+                        <a class="nav-link" href="About.html">
+                            About
+                        </a>
+                        <a class="nav-link" href="Shops.html">
+                            Shops
+                        </a>
+                        <a class="nav-link active" href="Contact.html">
+                            Contact
+                        </a>
+                        <a class="btn btn-coffee px-4" href="Join-Us.html">
+                            Join us
+                        </a>
+                    </div>
                 </div>
-                <label for="subject">Subject<input id="subject" name="subject" type="text" required maxlength="100"></label>
-                <label for="message">Your Message<textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea></label>
-                <button class="contact_button" type="submit">Send Message <span aria-hidden="true">&#10148;</span></button>
-            </form>
-        </section>
-        <section class="opening_strip"><div><strong>Opening Hours</strong><span>Monday - Friday &nbsp; 9:00 AM - 10:00 PM<br>Saturday - Sunday &nbsp; 8:00 AM - 11:00 PM</span></div><img src="assests/heroSection.jpeg" alt="Coffee cup on a wooden table"></section>
-    </main>
-    <footer class="site_footer"><div><h3>Cafe Murad</h3><p>Fresh coffee and good moments every day.</p></div><div class="footer_links"><a href="menu.html">Coffee Menu</a><a href="aboutus.html">About Us</a><a href="register.html">Register</a></div><p class="copyright">&copy; 2026 Cafe Murad</p></footer>
-</body>
+            </div>
+        </nav>
+        <main class="contact_page">
+            <section class="contact_hero page-hero">
+                <video class="site-background-video" autoplay muted loop playsinline preload="metadata" poster="assests/hero_background_greenish.avif" aria-hidden="true">
+                    <source src="https://cdn.coverr.co/videos/coverr-city-stroll-with-a-warm-drink/1080p.mp4" type="video/mp4">
+                </video>
+                <div>
+                    <p class="eyebrow">
+                        GET IN TOUCH
+                    </p>
+                    <h1>
+                        Contact Us
+                    </h1>
+                    <p>
+                        We’d love to hear from you! Whether you have a question, feedback, or just want to say hello — we’re here for you.
+                    </p>
+                </div>
+            </section>
+            <section class="contact_content tilt-card">
+                <div class="contact_details">
+                    <p class="eyebrow">
+                        REACH OUT
+                    </p>
+                    <h2>
+                        Our Contact Information
+                    </h2>
+                    <p>
+                        Feel free to get in touch with us through any of the following channels. We’ll make sure to respond as soon as possible.
+                    </p>
+                    <div class="detail_item">
+                        <strong>
+                            Our Location
+                        </strong>
+                        <span>
+                            123 Coffee Lane, Gulberg III,
+                            <br>
+                            Lahore, Pakistan
+                        </span>
+                    </div>
+                    <div class="detail_item">
+                        <strong>
+                            Phone
+                        </strong>
+                        <span>
+                            +92 300 1234567
+                            <br>
+                            (Mon - Sun, 10AM - 10PM)
+                        </span>
+                    </div>
+                    <div class="detail_item">
+                        <strong>
+                            Email
+                        </strong>
+                        <span>
+                            hello@cafemurad.com
+                        </span>
+                    </div>
+                    <div class="detail_item">
+                        <strong>
+                            Follow Us
+                        </strong>
+                        <span>
+                            @cafemurad &nbsp; Instagram &nbsp; Facebook
+                        </span>
+                    </div>
+                </div>
+                <form class="contact_form glass-card" action="#" method="post">
+                    <p class="eyebrow">
+                        SEND US A MESSAGE
+                    </p>
+                    <h2>
+                        We’re Here to Help
+                    </h2>
+                    <div class="contact_fields">
+                        <label for="contact-name">
+                            Your Name
+                            <input id="contact-name" name="name" type="text" required minlength="2">
+                        </label>
+                        <label for="contact-email">
+                            Your Email
+                            <input id="contact-email" name="email" type="email" required>
+                        </label>
+                    </div>
+                    <label for="subject">
+                        Subject
+                        <input id="subject" name="subject" type="text" required maxlength="100">
+                    </label>
+                    <label for="message">
+                        Your Message
+                        <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000">
+                        </textarea>
+                    </label>
+                    <button class="contact_button" type="submit">
+                        Send Message
+                        <span aria-hidden="true">
+                            &#10148;
+                        </span>
+                    </button>
+                </form>
+            </section>
+            <section class="opening_strip">
+                <div class="hours_intro">
+                    <p class="section-kicker">PLAN YOUR VISIT</p>
+                    <h2>Good coffee, whenever you need it.</h2>
+                    <p>Drop in for a quick morning cup or stay for a long afternoon. Our doors are open every day.</p>
+                    <a class="btn btn-coffee" href="Shops.html">Find a branch</a>
+                </div>
+                <div class="hours_schedule">
+                    <div class="hours_heading">
+                        <strong>Opening hours</strong>
+                        <span class="open_badge">OPEN DAILY</span>
+                    </div>
+                    <div class="hours_row">
+                        <span>Monday – Friday</span>
+                        <strong>9:00 AM – 10:00 PM</strong>
+                    </div>
+                    <div class="hours_row">
+                        <span>Saturday – Sunday</span>
+                        <strong>8:00 AM – 11:00 PM</strong>
+                    </div>
+                </div>
+            </section>
+            <section class="editorial-section">
+                <div class="container">
+                    <div class="editorial-copy">
+                        <p class="section-kicker">BEFORE YOU VISIT</p>
+                        <h2 class="display-6 fw-bold">A few useful things to know.</h2>
+                        <p>
+                            Our busiest hours are usually weekend afternoons, while
+                            weekday mornings are calmer. We welcome walk-ins, small
+                            gatherings, and remote workers looking for a comfortable
+                            table. If you are planning a larger event or need help
+                            choosing a branch, send us a message and our team will
+                            guide you.
+                        </p>
+                        <a class="btn btn-coffee" href="Shops.html">Compare our locations</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site_footer">
+            <div>
+                <h3>
+                    Cafe Murad
+                </h3>
+                <p>
+                    Fresh coffee and good moments every day.
+                </p>
+            </div>
+            <div class="footer_links">
+                <a href="Menu.html">
+                    Coffee Menu
+                </a>
+                <a href="About.html">
+                    About Us
+                </a>
+                <a href="Join-Us.html">
+                    Register
+                </a>
+            </div>
+            <p class="copyright">
+                &copy; 2026 Cafe Murad
+            </p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="js/script.js">
+        </script>
+    </body>
 </html>
