@@ -1,2 +1,6 @@
 # WAD_PROJECT
-Coffee Murad is a modern, responsive coffee shop website built with HTML, CSS, and JavaScript. Featuring warm colors, elegant typography, attractive drink photography, and stylish menu layouts, it delivers a clean and engaging experience for coffee and tea lovers.
+# Cafe Murad
+
+Cafe Murad is a responsive coffee shop website built with HTML, CSS, JavaScript, and Bootstrap 5. It includes:
+
+This is for Asignment 2.New functionalities has been added to this. All the six pages are proper funcitonal.
